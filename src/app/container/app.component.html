@@ -1,0 +1,24 @@
+<div class="page">
+  <div class="letter-rows">
+    <ng-container *ngFor="let letterRow of letterRows; let last = last">
+      <div class="letter-row">
+        <div class="letter-boxes">
+          <ng-container *ngFor="let letterBox of letterRow._letters">
+            <div class="letter-box" [class.letter-match]="letterBox.matched">
+              {{ letterBox._letter }}
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </ng-container>
+    <div class="keyboard">
+      <div
+        class="key"
+        *ngFor="let letterType of letterTypes"
+        (click)="letterPicked(letterType)"
+      >
+        {{ letterType }}
+      </div>
+    </div>
+  </div>
+</div>

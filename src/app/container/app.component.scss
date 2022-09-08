@@ -1,0 +1,53 @@
+.page {
+  background-color: lighten(black, 20%);
+  width: 100%;
+  height: 100%;
+}
+
+.letter-rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.letter-row {
+  margin: 0.1rem;
+}
+
+.letter-boxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.letter-box {
+  border: 1px solid rgb(29, 23, 23);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.keyboard {
+  display: flex;
+  margin: 2rem;
+}
+
+.key {
+  width: 2rem;
+  background-color: black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+}
+
+.letter-match {
+  background-color: green;
+}
